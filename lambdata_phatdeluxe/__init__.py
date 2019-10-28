@@ -7,8 +7,8 @@ import numpy as np
 #sample code
 
 # sample datasets
-ones = pd.DataFrame(np.ones(10))
-zeroes = pd.DataFrame(np.zeros(50))
+ONES = pd.DataFrame(np.ones(10))
+ZEROES = pd.DataFrame(np.zeros(50))
 
 # sample functions
 def increment(x):
