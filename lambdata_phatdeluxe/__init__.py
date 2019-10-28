@@ -16,8 +16,8 @@ def check_null(data):
     columns = data.columns
     null_list = []
     for column in columns:
-        if df[column].isnull().sum() > 0:
-            null_list.append({column, df[column].isnull().sum()})
+        if data[column].isnull().sum() > 0:
+            null_list.append({column, data[column].isnull().sum()})
     for i in range(0, len(null_list)):
         print(null_list[i], '\n')
 
