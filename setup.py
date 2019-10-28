@@ -5,7 +5,7 @@ import setuptools
 REQUIRED = [
     "numpy",
     "pandas",
-    "sklearn"
+    "scikit-learn"
 ]
 with open("README.md", "r") as fh:
     LONG_DESCRIPTION = fh.read()
