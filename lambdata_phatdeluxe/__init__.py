@@ -5,14 +5,20 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 
-# Function to create a train, validation, and test split
+
 def split(data):
+    """
+    Makes a train, val, and test split from one dataframe
+    """
     train, test = train_test_split(data, random_state=42, test_size=0.2)
     train, val = train_test_split(train, random_state=42, test_size=0.2)
     return train, val, test
 
-# Funciton to check each column in a dataframe for null values then print out a dict of the columns and their corresponding values
+
 def check_null(data):
+    """
+    Prints the columns with and ammounts of null values
+    """
     columns = data.columns
     null_list = []
     for column in columns:
@@ -21,8 +27,10 @@ def check_null(data):
     for i in range(0, len(null_list)):
         print(null_list[i], '\n')
 
-# Function to take a list, a name, and a dataframe, turn the list into a series, then add it to the dataframe with the name supplied
+
 def add_to_df(to_series, name, df):
+    """
+    Takes a list and adds it to a dataframe as a new columns
+    """
     new_col = pd.Series(to_series)
     df[name] = new_col
-
