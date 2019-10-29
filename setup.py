@@ -11,7 +11,7 @@ with open("README.md", "r") as fh:
     LONG_DESCRIPTION = fh.read()
     setuptools.setup(
     name="lambdata-Deluxe",
-    version = "0.1.3",
+    version = "0.1.4",
     author = "PhatDeluxe",
     description = "a collection of data science helper functions",
     long_description = LONG_DESCRIPTION,
